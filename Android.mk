@@ -7,6 +7,8 @@ include $(CLEAR_VARS)
 LOCAL_MODULE_TAGS := optional
 
 LOCAL_SRC_FILES := $(call all-java-files-under, src)
+LOCAL_CFLAGS := \
+        -Os
 LOCAL_PACKAGE_NAME := SamsungServiceMode
 LOCAL_JAVA_LIBRARIES := telephony-common
 LOCAL_CERTIFICATE := platform
